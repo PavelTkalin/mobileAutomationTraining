@@ -18,6 +18,13 @@ public class MainClassTest extends MainClass {
     {
         Assert.assertTrue("figure is less then 45",getClassNumber()>45);
     }
+    @Test
+    public void testGetClassString()
+
+    {
+        Assert.assertTrue("String is not containing Hello or hello words",getClassString().contains("Hello")||getClassString().contains("hello"));
+
+    }
 
 
 }
